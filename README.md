@@ -11,6 +11,7 @@ Since March 2017 CSS-grid is supported in most web browsers except IE10/11. This
 new feature in css called _Feature Queries_ (you can find a great tutorial on this on [Youtube by Rachel Andrew](https://www.youtube.com/watch?v=nU0LMoU14n4)): 
 
 '''css
+
 	.someClass{
 		//css layout with flexbox or floats or ... 
 		//a line with margins and/or widths to fix things
