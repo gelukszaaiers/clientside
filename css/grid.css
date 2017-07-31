@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	font-size: 16px;
+	
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.grid {
+	display: grid; 
+	grid-gap: 0px;
+	grid-template-columns: repeat(8,1fr) 10px;
+	grid-template-rows: 2.5rem 10rem 3.5em 50px auto; 
+	background-color: #FF8000;
+}
+
+.top-nav{
+	grid-column: 1 / 9; 
+	grid-row: 1 / 2;
+	z-index: 5;
+	display: grid; 
+	grid-template-columns: repeat(8,1fr);
+	align-self: center; 
+	font-size: 2.1rem;
+	padding-top: 0.4rem;
+}
+.top-nav .settings{
+	grid-column: 1/2;
+	padding-left: 1.2rem;
+}
+.top-nav .more{
+	grid-column: 5/9;
+	text-align:right;
+	padding-right: 1.2rem;
+}
+
+.location-box{
+	background-color:#97CD48;
+	grid-column: 1 / 9; 
+	grid-row: 1 / 4;
+}
+.info-box{
+	grid-column: 1/9;
+	grid-row: 4/6;
+	text-align: center;
+	width: 100%;
+	color: #FFF;
+}
+.info-box h1{
+	font-size: 3rem;
+}
+.info-box i{
+	padding-left: 0.3rem;
+	padding-right: 0.3rem; 
+}
+.info-box ul{
+	padding-left: 0rem;
+	padding-top: 2.8rem;
+	list-style: none;
+	width: 100%;
+}
+.info-box li{
+	display: inline;
+}
+.img-carousel{
+	grid-column: 1/9;
+	grid-row: 6/7; 
+	text-align: center;
+}
+.img-carousel img{
+	height: 7rem;
+	width: auto; 
+}
+.description{
+	grid-column: 1/9;
+	grid-row: 7/8; 	
+}
+.description p{
+    border-left-style: solid;
+	border-left-width: 5px;
+	border-left-color: #97CD48;
+	margin-left: 2%;
+	padding-left: 2%;
+}
+.connect{
+	grid-column: 1/6;
+	grid-row: 8/9; 
+	text-align: center;
+	align-self: center; 
+}
+.connect button{
+	border-radius: 4px;
+	background-color: #97CD48;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+	width: 90%;
+
+}
+.social-share{
+	grid-column: 6/9;
+	grid-row: 8/9;
+	color:#FFFFFF;
+	padding-left: 2rem; 
+}
+.social-share h4{
+	font-size: 1rem; 
+	margin: 0px;
+	padding: 0px;
+}
+.social-share ul{
+	list-style: none;
+	padding-left: 0em;
+	margin-top: 0px;
+}
+.social-share li{
+	display:inline;
+	font-size: 2.5rem;
+	padding-right: 0.5rem;
+}
+.history{
+	grid-column: 1/9;
+}
+.history h2{
+	margin: 0px;
+	margin-bottom: 0.7rem;
+}
+.history .userHistory{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center; 
+	padding-left: 2%;
+	padding-right: 2%;
+	color: #fff;
+	margin-bottom: 0.7rem;
+}
+.history .userHistory .user{
+	width: 70%;
+}
+.history .userHistory .user i{
+	padding-right: 0.2em;
+}
+.back-to-map{
+	background-color: #666666;
+	grid-column: 9 / -1;
+	grid-row: 1 / 10;
+}

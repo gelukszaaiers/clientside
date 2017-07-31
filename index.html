@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>de Gelukszaaiers - aanbod</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="gelukszaaiers" href="gelukszaaiers.png">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -19,10 +21,63 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="grid">
+			<div class="top-nav">
+				<div class="settings"><a href="#" aria-label="Settings"><i class="fa fa-cog"></i></a></div>
+				<div class="more"><a href="#" aria-label="More"><i class="fa fa-ellipsis-h"></i></a></div>
+			</div>
+			<div class="location-box">
+				<iframe width="100%" height="100%" position="absolute" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=4.394713640213014%2C51.21687751536353%2C4.4091975688934335%2C51.22142019123386&amp;layer=hot&amp;marker=51.21914890933133%2C4.401955604553223"></iframe>
+			</div>
+			<h1 class="info-box">naam geluksaanbod</h1>
+			<div class="info-box">
+			<ul>
+				<li><i class="fa fa-calendar"></i>dagelijks</li>
+				<li><i class="fa fa-clock-o"></i>9.00u-10.00u</li>
+				<li><i class="fa fa-user-circle"></i>Gebruikersnaam</li>
+			</ul>
+			</div>
+			<div class="img-carousel">
+				<img src="img/imgDefault.png"></img>
+				<img src="img/imgDefault.png"></img>
+				<img src="img/imgDefault.png"></img>
+				<img src="img/imgDefault.png"></img>
+			</div>
+			<div class="description"><p>Hier komt een korte beschrijving van het geluksaanbod, wat het inhoudt, wat praktische info die je kwijt wil om het te doen werken, ...</p></div>
+			<div class="connect"><button>VERBIND</button></div>
+			<div class="social-share">
+				<h4>Deel dit geluk: </h4>
+				<ul>
+					<li><i class="fa fa-facebook"></i></li>
+					<li><i class="fa fa-instagram"></i></li>
+					<li><i class="fa fa-whatsapp"></i></li>
+				</ul>
+			</div>
+			<div class="history">
+				<h2>Geschiedenis</h2>
+				<div class="userHistory">
+					<div class="user"><i class="fa fa-user-circle"></i>andere gebruiker 3</div>
+					<div class="date">21/07/'17</div>
+					<div class="recommend"><i class="fa fa-star"></i></div>
+				</div>
+				<div class="userHistory">
+					<div class="user"><i class="fa fa-user-circle"></i>andere gebruiker 2</div>
+					<div class="date">17/07/'17</div>
+					<div class="recommend"><i class="fa fa-star-o"></i></div>
+				</div>
+				<div class="userHistory">
+					<div class="user"><i class="fa fa-user-circle"></i>andere gebruiker 1</div>
+					<div class="date">12/07/'17</div>
+					<div class="recommend"><i class="fa fa-star-o"></i></div>
+				</div>
+			</div>
+			<div class="back-to-map clickable">
+				<a href="#toMap"></a>
+				<iframe width="100%" height="100%" position="absolute" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=4.394713640213014%2C51.21687751536353%2C4.4091975688934335%2C51.22142019123386&amp;layer=hot"></iframe>
+			</div>
+		</div
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
